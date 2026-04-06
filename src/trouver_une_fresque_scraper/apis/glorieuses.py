@@ -41,6 +41,9 @@ def get_glorieuses_data(source):
         # Get event title
         ################################################################
         title = json_record["Label event"]
+        if not title:
+            logging.info("Rejecting record: no title provided")
+            continue
 
         ################################################################
         # Parse start and end dates
@@ -69,7 +72,7 @@ def get_glorieuses_data(source):
         if "Format" in json_record and json_record["Format"] is not None:
             online = is_online(json_record["Format"])
         else:
-            logging.info(f"Rejecting record: no workshop format provided")
+            logging.info("Rejecting record: no workshop format provided")
             continue
 
         ################################################################

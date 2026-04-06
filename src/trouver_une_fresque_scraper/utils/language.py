@@ -12,7 +12,6 @@ LANGUAGE_STRINGS = {
     "English": "en",
     "Französisch": "fr",
     "Français": "fr",
-    "Français": "fr",
     "French": "fr",
     "German": "de",
     "Indonesian": "id",
