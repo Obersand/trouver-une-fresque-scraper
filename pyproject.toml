@@ -18,7 +18,6 @@ dependencies = [
     "langdetect",
     "pre-commit",
     "playwright>=1.57.0",
-    "atexit",
 ]
 
 [build-system]
